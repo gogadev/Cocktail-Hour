@@ -1,0 +1,59 @@
+.cocktail-container {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  width: 100%;
+  margin: 1rem auto;
+  position: relative;
+}
+
+.img-container {
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.img-container img {
+  width: 65%;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 2s ease;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.img-container img:hover {
+  opacity: 1;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.cocktail-detail h3 {
+  border: 1px solid grey;
+  padding: 0.2rem 0.4rem;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.main-btn {
+  width: 60%;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  background: none;
+  color: white;
+  padding: 0.1rem;
+  font-size: 1.1rem;
+  background: rgba(0, 0, 0, 0.7);
+  text-shadow: 1px 1px black;
+  letter-spacing: 7px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .img-container {
+    margin: 0.5rem;
+    margin-left: 0.1rem;
+  }
+}

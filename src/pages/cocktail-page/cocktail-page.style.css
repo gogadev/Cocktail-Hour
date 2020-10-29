@@ -1,0 +1,136 @@
+.cocktail-page {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  justify-items: center;
+  justify-content: center;
+  margin: 2.5rem auto;
+}
+
+.cocktail-page h2 {
+  margin: 13.5rem auto;
+  letter-spacing: 7px;
+  transform: translateX(2.5rem);
+}
+
+.cocktail-page .far {
+  opacity: 0.8;
+}
+
+.cocktail-page span {
+  transform: rotate(90deg);
+}
+
+.main-image img {
+  width: 62%;
+  margin-left: 8.8rem;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  opacity: 0.8;
+  transition: all 2s ease-in;
+  cursor: pointer;
+}
+
+.main-image img:hover {
+  opacity: 1;
+}
+
+.main-btn:hover {
+  transition: all 1s ease;
+  transform: translateY(0.5rem);
+}
+
+.main-image .main-btn {
+  width: 20%;
+  left: 40%;
+  top: 47%;
+  padding: 0.3rem 0;
+  background: rgba(0, 0, 0, 0.9);
+  border: 1px solid grey;
+  color: grey;
+  font-weight: bolder;
+  text-shadow: none;
+}
+
+.info {
+  width: 100%;
+  margin: 4rem;
+  border: 1px dotted grey;
+  display: grid;
+  padding: 0 0.8rem;
+  transform: translateX(-4rem);
+}
+
+.info h5 {
+  margin: 1rem auto;
+  background: rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 0 0.5rem;
+}
+
+.info strong {
+  width: 55%;
+  display: flex;
+  letter-spacing: 5px;
+  margin: 0.5rem auto;
+  font-size: 1.1rem;
+  transform: translateX(0.5rem);
+}
+
+.detail {
+  width: 100%;
+  margin: 0.3rem;
+  border: 1px dotted grey;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.detail strong {
+  transform: translateX(0.6rem);
+}
+
+.detail h5 {
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .cocktail-page {
+    grid-template-columns: 1fr;
+  }
+  .main-image img {
+    width: 80%;
+    transform: translateX(-7.3rem);
+  }
+
+  .main-image .main-btn {
+    width: 75%;
+    top: 60%;
+    left: 9%;
+    padding: 0.3rem 0;
+    background: rgba(0, 0, 0, 0.9);
+    border: 1px solid grey;
+    color: grey;
+    font-weight: bolder;
+    text-shadow: none;
+    font-size: 1rem;
+    letter-spacing: 3px;
+  }
+  .info {
+    transform: translateX(-0.5rem);
+    width: 80%;
+  }
+  .cocktail-page h2 {
+    display: grid;
+    margin: 0.2rem auto;
+    transform: translateX(-0.2rem);
+    text-align: center;
+  }
+  .cocktail-page .far {
+    transform: rotate(90deg);
+    margin: 2rem;
+  }
+  .main-image:hover .main-btn {
+    transition: none;
+    transform: none;
+  }
+}

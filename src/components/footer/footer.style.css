@@ -1,0 +1,12 @@
+footer {
+  width: 90%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  background: rgb(229, 232, 235);
+  margin: 1.5rem auto;
+  border: 1px solid grey;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  opacity: 0.7;
+}

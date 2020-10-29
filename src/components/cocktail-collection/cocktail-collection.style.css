@@ -1,0 +1,21 @@
+.cocktail-list {
+  width: 95vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  justify-items: center;
+  margin: 1rem auto;
+}
+
+.no-match {
+  text-align: center;
+  margin: 10rem auto;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .cocktail-list {
+    grid-template-columns: 1fr;
+  }
+}
