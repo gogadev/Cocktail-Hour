@@ -16,7 +16,6 @@ const Home = () => {
           `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${search}`
         );
         const data = await response.json();
-        console.log(data);
         const { drinks } = data;
 
         if (drinks) {
